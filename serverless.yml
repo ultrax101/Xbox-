@@ -35,4 +35,4 @@ resources:
       Properties:
         TopicArn: !Ref xboxStockTopic
         Protocol: sms
-        Endpoint: 15555555
+        Endpoint: 7003067988

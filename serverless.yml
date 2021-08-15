@@ -17,8 +17,8 @@ functions:
     memorySize: 1600
     timeout: 30
     environment:
-      topic: !Ref PS5StockTopic
-      checkUrl: https://www.bestbuy.com/site/sony-playstation-5-console/6426149.p?skuId=6426149
+      topic: !Ref xboxStockTopic
+      checkUrl: https://www.amazon.in/stores/page/1D2AEE2B-0C0B-4B95-902E-247C55AE2073?ingress=2&visitId=14e14595-5368-4acd-9e08-17ab40bf0f20&ref_=ast_bln
       sku: 6426149
     events:
       - schedule: rate(5 minutes)
@@ -28,11 +28,11 @@ resources:
     PS5StockTopic:
       Type: AWS::SNS::Topic
       Properties:
-        DisplayName: PS5 Stock Topic
-        TopicName: PS5_Stock_Topic
+        DisplayName: xbox Stock Topic
+        TopicName: xbox_Stock_Topic
     PS5StockTopicSubscription:
       Type: AWS::SNS::Subscription
       Properties:
-        TopicArn: !Ref PS5StockTopic
+        TopicArn: !Ref xboxStockTopic
         Protocol: sms
         Endpoint: 15555555

@@ -18,8 +18,8 @@ functions:
     timeout: 30
     environment:
       topic: !Ref xboxStockTopic
-      checkUrl: https://www.amazon.in/stores/page/1D2AEE2B-0C0B-4B95-902E-247C55AE2073?ingress=2&visitId=14e14595-5368-4acd-9e08-17ab40bf0f20&ref_=ast_bln
-      sku: 6426149
+      checkUrl: https://www.flipkart.com/microsoft-xbox-series-x-1024-gb/p/itm63ff9bd504f27?pid=GMCFVPFCFDFGJHGG&otracker=wishlist&lid=LSTGMCFVPFCFDFGJHGGLGCF4A&fm=organic&iid=cea9478e-efab-495d-8ce8-5611b4709f15.GMCFVPFCFDFGJHGG.PRODUCTSUMMARY&ppt=pp&ppn=pp&ssid=kqipqsfcy80000001628998420256
+      sku: MICROSOFT Xbox Series X 1024 GB  (Black)
     events:
       - schedule: rate(5 minutes)
 

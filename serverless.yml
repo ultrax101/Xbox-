@@ -1,4 +1,4 @@
-service: ps5-stock-checker
+service: xbox-stock-checker
 frameworkVersion: '2'
 
 provider:
@@ -9,7 +9,7 @@ provider:
     - Effect: 'Allow'
       Action:
         - 'sns:Publish'
-      Resource: !Ref PS5StockTopic
+      Resource: !Ref xboxStockTopic
 
 functions:
   check:
